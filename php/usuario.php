@@ -5,8 +5,7 @@ $servername = "http://18.221.230.14";
 
 $dbname = "petest3";
 $conn = new mysqli($servername, $username, $password, $dbname);
-if($_POST["metodo"] == "select"){
-    $sql = "select * from usuarios where username ='".$_POST["username"]."'";
+if($_";
     $result = $conn->query($sql);
     if($result->num_rows > 0){
         echo json_encode(mysqli_fetch_assoc($result));
